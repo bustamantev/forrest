@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -12,21 +13,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
     rel="stylesheet">
     <script src="https://kit.fontawesome.com/ffec4ec2ed.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="csslogin/login.css" />
+    <link rel="stylesheet" href="{% static 'core/css/login.css' %}" />
 
     <title>Iniciar sesion-The forest Wiki</title>
   </head>
   <body class="bg-dark">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         
-      <a class="navbar-brand" href="menuprincipal_wiki.html" id="fuente">The Forest Wiki</a>
+      <a class="navbar-brand" href="/" id="fuente">The Forest Wiki</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="menuprincipal_wiki.html">Inicio</a>
+            <a class="nav-link" href="/">Inicio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="forowiki.html">Foro</a>
@@ -94,7 +95,7 @@
                       <input type="checkbox" onclick="myFunction()"> Mostrar Contraseña
                       <a href="recuperarcontra.html" id="emailHelp" class="form-text text-muted text-decoration-none">  ¿Has olvidado tu contraseña?</a>                     
                     </div>
-                    <a href="menuprincipal_wiki.html" class="button">Iniciar sesion</a>
+                    <a href="/" class="button">Iniciar sesion</a>
 
                   </form>
 

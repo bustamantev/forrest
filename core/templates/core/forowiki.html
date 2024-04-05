@@ -1,5 +1,7 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,21 +13,21 @@
     <link href="https://file.myfontastic.com/tc26fJHv8scB3d4vHQRRsV/icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="css/foro.css">
+    <link rel="stylesheet" href="{% static 'core/css/foro.css' %}" />
 
 
 </head>
 <body id="fondo1">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         
-        <a class="navbar-brand" href="menuprincipal_wiki.html" id="fuente">The Forest Wiki</a>
+        <a class="navbar-brand" href="/" id="fuente">The Forest Wiki</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <a class="nav-link" href="menuprincipal_wiki.html">Inicio</a>
+                <a class="nav-link" href="/">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="forowiki.html">Foro</a>
@@ -62,7 +64,7 @@
 
 
             <div class="media">
-                <img src="img_wiki/user.png"  alt="">
+                <img src="{%static 'core/img/img_wiki/user.png'%}" alt="">
                 <div class="media-body">
                     <p class="nombre">Vicente Echevarria <span>8:00 pm, Hoy</span></p>
                     <p class="comentario">
@@ -79,7 +81,7 @@
             </div>
 
             <div class="media">
-                <img src="img_wiki/userforest.png" alt="">
+                <img src="{%static 'core/img/img_wiki/userforest.png'%}" alt="">
                 <div class="media-body">
                     <p class="nombre">Kevin Oyaneder <span>8:00 pm, Hoy</span></p>
                     <p class="comentario">
@@ -102,7 +104,7 @@
             </div>
 
             <div class="media">
-                <img src="img_wiki/user.png"  alt="">
+                <img src="{%static 'core/img/img_wiki/user.png'%}" alt="">
                 <div class="media-body">
                     <p class="nombre">Alexis Jara <span>8:00 pm, Hoy</span></p>
                     <p class="comentario">
